@@ -1,0 +1,87 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DEE5E5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.boxCalculadora{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: #082D0F ;
+    color: #DEE5E5;
+    padding: 2%;
+    border-radius: 15px;
+    flex-direction: column;
+}
+.boxCalculadora form{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+row-gap: 20px;
+cursor: default;
+height: 80%;
+}
+
+.boxCalculadora form input{
+    border: solid transparent 1px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #5E807F;
+    transition: border 1s;
+}
+.boxCalculadora form input::placeholder{
+    color: #DEE5E5;
+}
+.boxCalculadora form input:focus{
+    border: solid #17B890 1px;
+    outline: none;
+    
+}
+.checkbox_container{
+    display: flex;
+    column-gap: 2px;
+}
+.boxCalculadora form input[type="radio"]{
+    accent-color: #17B890;
+    transition: accent-color 0.3s;
+}
+
+.boxCalculadora form button{
+    width: 80%;
+    height: 20%;
+    font-size: 120%;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #5E807F;
+    color: #9DC5BB;
+    transition: 1s;
+}
+
+.boxCalculadora form button:hover{
+    background-color: #9DC5BB;
+    color: #5E807F;
+}
+
+.resultado_gorjeta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+   
+}
+
+.resultado_gorjeta p{
+    font-size: 35px;
+}

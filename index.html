@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="assets/styles/main_style.css">
+</head>
+
+<body>
+    <main>
+        <div class="boxCalculadora">
+            <form action="">
+                <h1>TIP</h1>
+                <input type="text" placeholder="Enter restaurant bill total" id="valorTotal">
+                <h2> How would you rate the overall quality of the service you received?</h2>
+
+                <div class="checkbox_container">
+                    <label for="at_bom">Good Customer Service</label>
+                    <input type="radio" id="srv_good" name="service_quality" value="Good">
+                </div>
+                <div class="checkbox_container">
+                    <label for="at_regular">Regular Customer Service</label>
+                    <input type="radio" id="srv_regular" name="service_quality" value="Regular">
+                </div>
+                <div class="checkbox_container">
+                    <label for="at_regular">Bad Customer Service</label>
+                    <input type="radio" id="srv_bad" name="service_quality" value="Bad">
+                </div>
+
+
+                <button class="calculate_tip">Get Tip Amount</button>
+            </form>
+            <div class="resultado_gorjeta">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
